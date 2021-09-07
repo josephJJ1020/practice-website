@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<title>Products / F Tech</title>
+</head>
+<style type="text/css">
+	body {
+		margin: 0;
+		padding: 0; 
+		text-align: center;
+		font-family:'Urbanist', sans-serif;
+	}
+	h1 {
+		font-family: 'Montserrat', sans-serif;
+	}
+	a {
+		text-decoration: none;
+	}
+	li {
+		list-style: none;
+	}
+	div {
+		padding: auto;
+	}
+/*-----------------------------------------------------------------------------------*/
+	/*navigation bar*/
+	nav {
+		display: flex;
+		background-color: green;		
+		justify-content: space-around;
+		align-items: center;
+		margin: 0;
+		padding: 0px 30px 0px 30px;
+	}
+	.inline ul {
+
+		margin: 0;
+	}
+	.inline li {
+		display: inline-flex;
+		list-style: none;
+		color: black;
+	}
+	nav li {
+		margin: 10px;
+	}
+	nav a {
+		color: white;
+	}
+	.highlight:hover {
+		color: lightgrey;
+	}
+	.logo {
+		margin: 0px;
+		font-size: 60px;
+		
+	}
+	.logo h1 {
+		margin: 0;
+	}
+
+/*-----------------------------------------------------------------------------------*/
+	/*nav1*/
+	.nav1 {
+		border-radius: 1%;
+	}
+	.nav1 ul {
+		margin: 0;
+		padding: 0;
+	}
+	.nav1 li {
+		padding: 20px;
+		border-bottom: : 1px solid grey;
+	}
+	.nav1 li:hover {
+		background-color: whitesmoke;
+	}
+	.nav1 a {
+		color: black;
+	}
+/*-----------------------------------------------------------------------------------*/
+	/*sort*/
+	.sort {
+		width: 100%;
+		text-align: left;
+	}
+	.sort ul {
+		background-color: lightgrey;
+	}
+	.sort input[type=text] {
+	  float: right;
+	  padding: 6px;
+	  margin-top: 10px;
+	  margin-right: 16px;
+	  font-size: 17px;
+	  border: none;
+	}
+/*-----------------------------------------------------------------------------------*/
+	/*main*/
+	.main {
+		background-color: white;
+		height: 1100px;
+	}
+/*-----------------------------------------------------------------------------------*/
+	/*sidebar*/
+	.sidebar {
+		float: left;
+		width: 20%;
+		height: 1000px;
+		padding: 0;
+		margin: 10px;
+		margin-right: 0px;
+		background-color: rgba(0,255,0,0.5);
+	}
+/*-----------------------------------------------------------------------------------*/
+	/*products*/
+	.main1 {
+		padding: 0;
+		margin: 0;
+	}
+	.box {
+		display: inline-block;
+		box-shadow: 0.5px 1px 5px lightgrey;
+		width: 320px;
+		margin: 10px;
+		transition: all 0.2s ease;
+	}
+	.box a {
+		color: black;
+		margin: 0;
+	}
+	.box img {
+		width: 200px;
+		height: 200px;
+		margin: 0;
+	}
+	.box p{
+		margin: 10px;
+	}
+	.box:hover {
+		transform: scale(1.01);
+	}
+	.addtocart {
+		margin: 10px;
+		padding: 10px;
+		background-color: khaki;
+		border-radius: 5%;
+		border: none;
+		transition: all 0.2s ease;
+	}
+	.addtocart:hover {
+		transform: scale(1.1);
+	}
+/*-----------------------------------------------------------------------------------*/
+	/*footer*/
+
+	.pages {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.arrow {
+		margin: 20px;
+		display: inline-block;
+	}
+	.pagenum {
+		margin: 0;
+		padding: 0;
+	}
+	.pagenum ul {
+		padding: 0;
+		padding-inline-start: 0;
+		display: inline-block;
+		
+	}
+	.pagenum li {
+		padding: 10px;
+		margin: 0;
+		background-color: white;
+		border-radius: 20%;
+	}
+	.arrow img {
+		width: 20px;
+		height: 20px;
+		display: inline;
+	}
+	#left {
+		transform: rotate(180deg);
+	}
+
+</style>
+<body>
+	<nav  class="inline">
+		<div class="logo">
+			<h1>
+				<a href="#home" class="highlight">
+					F Tech
+				</a>
+			</h1>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="new.html" class="highlight">Home</a></li>
+				<li><a href="products.html" class="highlight">Products</a></li>
+				<li><a href="new.html#about" class="highlight">About Us</a></li>
+				<li><a href="new.html#contact us" class="highlight">Contact Us</a></li>
+
+			</ul>
+		</div>
+	</nav>
+
+	<div class="sort inline nav1">
+		<ul>
+			<a href="#"><li>Laptop</li></a>
+			<a href="#"><li>Laptop</li></a>
+			<a href="#"><li>Laptop</li></a>
+			<a href="#"><li>Laptop</li></a>
+			<a href="#"><li>Laptop</li></a>
+			<input type="text" placeholder="Search..">
+		</ul>
+	</div>
+	<div class="main">
+		<div class="sidebar nav1">
+			<ul>
+				<a href="#"><li>Laptop</li></a>
+				<a href="#"><li>Laptop</li></a>
+				<a href="#"><li>Laptop</li></a>
+				<a href="#"><li>Laptop</li></a>
+				<a href="#"><li>Laptop</li></a>
+			</ul>
+		</div>
+		<div class="main1" id="products">
+			<div class="box">
+				<a href="mainproduct.html">
+					<div>
+						<img src="laptop.png">
+						<p class="label">Laptop</p>
+						<p class="price">$300</p>
+						<button class="addtocart">Add to Cart</button>
+					</div>
+				</a>
+			</div>
+			<div class="box">
+				<a href="mainproduct.html">
+					<div>
+						<img src="laptop.png">
+						<p class="label">Laptop</p>
+						<p class="price">$300</p>
+						<button class="addtocart">Add to Cart</button>
+					</div>
+				</a>
+			</div>
+			<div class="box">
+				<a href="mainproduct.html">
+					<div>
+						<img src="laptop.png">
+						<p class="label">Laptop</p>
+						<p class="price">$300</p>
+						<button class="addtocart">Add to Cart</button>
+					</div>
+				</a>
+			</div>
+			<div class="box">
+				<a href="mainproduct.html">
+					<div>
+						<img src="laptop.png">
+						<p class="label">Laptop</p>
+						<p class="price">$300</p>
+						<button class="addtocart">Add to Cart</button>
+					</div>
+				</a>
+			</div>
+			<div class="box">
+				<a href="mainproduct.html">
+					<div>
+						<img src="laptop.png">
+						<p class="label">Laptop</p>
+						<p class="price">$300</p>
+						<button class="addtocart">Add to Cart</button>
+					</div>
+				</a>
+			</div>
+			<div class="box">
+				<a href="mainproduct.html">
+					<div>
+						<img src="laptop.png">
+						<p class="label">Laptop</p>
+						<p class="price">$300</p>
+						<button class="addtocart">Add to Cart</button>
+					</div>
+				</a>
+			</div>
+			<div class="box">
+				<a href="mainproduct.html">
+					<div>
+						<img src="laptop.png">
+						<p class="label">Laptop</p>
+						<p class="price">$300</p>
+						<button class="addtocart">Add to Cart</button>
+					</div>
+				</a>
+			</div>
+			<div class="box">
+				<a href="mainproduct.html">
+					<div>
+						<img src="laptop.png">
+						<p class="label">Laptop</p>
+						<p class="price">$300</p>
+						<button class="addtocart">Add to Cart</button>
+					</div>
+				</a>
+			</div>
+		
+		</div>
+	</div>
+
+	<footer>
+		<div class="pages">
+			<div class="arrow" id="left">
+				<a href="footer">
+					<img src="arrow.png">
+				</a>
+			</div>
+			<div class="pagenum inline">
+				<ul>
+				<a href="#"><li>1</li></a>
+				<a href="#"><li>2</li></a>
+				<a href="#"><li>3</li></a>
+				<a href="#"><li>4</li></a>
+				<a href="#"><li>5</li></a>
+			</ul>
+			<div class="arrow">
+				<a href="footer">
+					<img src="arrow.png">
+				</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
